@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Sales">
+    <meta name="description" content="falando de formularios">
+    <meta name="keywords" content="Aprender">
+    <title>Aula de Formularios</title>
+</head>
+<body>
+    <h1>Formulatios html</h1>
+    <p>bora falar de formularios <br>
+        sao dados de entrada login...... essas coisas <br>
+        <a href="index.html">voltar pra principal</a> <br><br>
+
+        vamos usar a tag <b>forms</b> e dentro dela nos temos
+        o <b>imput</b> <br>
+        ele tem varios coisas, o primeiro é o text
+        <br>
+        <b> placeholder </b> é pra falar pro usuario oq é pra fazer <br>
+
+        <b>label</b> é pra deixar no canto esquerdo do retangulo
+        <br>
+        tbm temos o campo do tipo senha  no input vamos colocar o type <b>password</b> mascara oq ta sendo digitado <br> 
+        tbm temos o tipo email type <b>email</b> detecta se oq digitou é email <br>
+        e o <b>sumit/value</b> que faz a validação <br>
+        no form da pra colocar <b>action</b> junto do <b>method</b>
+        o arquivo geralmente é php <br>
+        se colocar <b>required</b> nos input, a pessoa vai ser obrigada a colocar algo <br>
+        o imput do tipo <b>radio</b> é aonde tem as bolinhas de varias esccolhas radio é apenas uma opcao de escolha <br>
+
+        agr o <b>checkbox</b> ele vai ser de multiplas escolhas <br>
+        lembrando, faz input e depois o label <br><br>
+        
+        saindo do input, vamos usar o <b>select</b> e dentro dele temos as <b>option</b> <br> <br>
+
+
+
+        e temos o campo de <b>textarea</b> um campo de texto que a pessoa escreve <br>
+        <b>rows</b>  e <b>cols</b> deixa maior a caixa de texto <br>
+        o <b>button</b> é quase igual o sumbit mas ele é generico
+
+        
+        <br>
+
+
+
+        <form  >
+            <label for="campo_nome">Nome:</label>
+            
+            <input  id="campo_nome" type="text" placeholder="Digite seu nome aqui!" required >
+            <br><br>
+            <label for="campo_sobre">Sobrenome:</label>
+            <input  id="campo_sobre" type="text" placeholder="Digite o Sobrenome!" required >
+            <br><br>
+            <label for="campo_senha">Senha:</label>
+
+            <input  id="campo_senha" type="password" placeholder="Digite sua senha" required > <br><br>
+            <label for="campo_email">Email:</label>
+
+            <input  id="campo_email" type="email" placeholder="Digite um email" required > <br><br>
+
+
+
+            <h2>Escolha teste</h2>
+            <input type="radio" id="Cachorro" name="animal" value="Cachorro" > 
+            <label for="Cachorro"> Cachoroos</label>
+            <br><br>
+            <input type="radio" id="cat" name="animal" value="gato" > 
+            <label for="cat"> Gato</label>
+            <br><br>
+             <input type="radio" id="bird" name="animal" value="Passaro" > 
+            <label for="bird"> Passaro</label>
+            <br><br><br><br>
+
+            <h2>Oque vc tem em casa?</h2>
+
+        
+
+            <input id="item1" type="checkbox" name="Item1" value="Tv">
+            <label for="item1"> TV</label> <br><br>
+            <input id="item2" type="checkbox" name="item2" value="Video Game">
+            <label for="item2"> Video Game</label> <br><br>
+            <input id="item3" type="checkbox" name="item3" value="Cama">
+            <label for="item3"> Cama</label> <br><br> <br>
+
+
+
+            <h2>Escolha uma Cor</h2>
+            <select name="Cores">
+                <option selected  disabled value="">Selecione uma cor</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="Preto">Preto</option>
+                <option value="Azul">Azul</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Magenta">Magenta</option>
+
+
+
+
+
+            </select> <br><br><br>
+
+            <h2>Digite sua Mensagem</h2>
+            <textarea  placeholder="Digite o texto"  rows="10"  cols="60" name="mensagem" id="1"></textarea> <br><br>
+
+
+            <input type="submit" value="Enviar Formulario">
+            <button>clique aq</button>
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+    
+    
+
+    
+    
+    
+    </p>
+    
+</body>
+</html>
